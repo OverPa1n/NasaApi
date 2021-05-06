@@ -1,0 +1,16 @@
+<%- include('partials/head')%>
+<body style="font-family: 'Lato', sans-serif;">
+<%- include('partials/navbar')%>
+
+<div class="container d-flex justify-content-center" style="padding-top: 100px">
+    <div class="card" style="width: 50rem;">
+        <img src="<%= apodData.url%>" class="card-img-top card_img" alt="Pic">
+        <div class="card-body">
+            <h5 class="card-title text-center"><%= apodData.title%></h5>
+            <p class="card-text pt-3" style="font-size: 1.6rem"><%= apodData.explanation%></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

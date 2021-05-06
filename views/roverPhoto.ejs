@@ -1,0 +1,32 @@
+<%- include('partials/head')%>
+<body style="font-family: 'Lato', sans-serif;">
+<%- include('partials/navbar')%>
+
+<div class="container d-flex justify-content-center" style="padding-top: 100px">
+    <div class="card mr-3" style="width: 50rem;">
+        <img src="<%=hazardCamera.image%>" class="card-img-top card_img" alt="Pic">
+        <div class="card-body">
+            <h5 class="card-title text-center">Earth Date: <%=hazardCamera.earthDate%></h5>
+            <p class="card-text pt-3" style="font-size: 1.6rem">Camera: <%=hazardCamera.camera%></p>
+            <p class="card-text pt-3" style="font-size: 1.6rem">Launch Date: <%=hazardCamera.launchDate%></p>
+            <p class="card-text pt-3" style="font-size: 1.6rem">Landing Date: <%=hazardCamera.landingDate%></p>
+            <p class="card-text pt-3" style="font-size: 1.6rem">Status: <%=hazardCamera.status%></p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 50rem;">
+        <img src="<%= chemCamera.image%>" class="card-img-top card_img" alt="Pic">
+        <div class="card-body">
+            <h5 class="card-title text-center">Earth Date:<%= chemCamera.earthDate%></h5>
+            <p class="card-text pt-3" style="font-size: 1.6rem">Camera: <%= chemCamera.camera%></p>
+            <p class="card-text pt-3" style="font-size: 1.6rem">Launch Date: <%=chemCamera.launchDate%></p>
+            <p class="card-text pt-3" style="font-size: 1.6rem">Landing Date: <%=chemCamera.landingDate%></p>
+            <p class="card-text pt-3" style="font-size: 1.6rem">Status: <%=chemCamera.status%></p>
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
